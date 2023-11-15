@@ -1,0 +1,12 @@
+<h1>This is defnatly yelp KappaRoss123</h1>
+
+
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name , restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+
+
+<%=  link_to "+add a new restaurant"  , new_restaurant_path , class:"btn btn-primary"%>
